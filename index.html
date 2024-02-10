@@ -10,21 +10,29 @@
 <body>
     <nav>
         <div class="navbar">
-            <div class="contact">
-                <p>O'Zee Treats</p>
-             </div>
-
+            
+                <div id="company">
+                    <h1>O'Zee Treats</h1>
+                 </div>    
+            
+            
             <div class="manu-icon">
                 <span class="material-symbols-outlined">
                     menu
                     </span>
                 <a>Manu</a>
+
              </div>
              
          </div>
     </nav>
    
     <section class="menu">
+        <div class="middle">
+            <img src="./assets/IMG-20240210-WA0008.jpg" alt="">
+            <img src="./assets/IMG-20240210-WA0006.jpg" alt="">
+            <img src="./assets/IMG-20240210-WA0009.jpg" alt="">
+        </div>
         <div class="sidepart">
             <p>About us</p>
             <p>Store</p>
@@ -32,11 +40,28 @@
             <p>Location</p>
             <p>delivary</p>
         </div>
-        <div class="midle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi consequuntur sint sit obcaecati doloribus tempore. Corporis, nesciunt praesentium, deleniti eius quibusdam debitis nostrum aliquid cum et necessitatibus odio. Consequatur.</div>
     </section>
    
 
 
     
 </body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.querySelectorAll(".middle img");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change slide every 2 seconds (adjust as needed)
+    }
+</script>
 </html>

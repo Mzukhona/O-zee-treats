@@ -1,42 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+*{
+    color: white;
 
-nav{ 
+}
+nav {
     background: #101213;
-    justify-content: center;
-    color: rgb(86, 134, 134);
     overflow: hidden;
-    position: static;
+    position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: 40px;
-    padding: 30px 0px ;
+    padding: 30px 0px;
 }
-.manu-icon{
+
+.manu-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.navbar{
+    
+}    
+
+    h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: px;
+        font-weight: 300;
+        margin: 0; /* Reset margin to ensure proper spacing */
+    }
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px 40px;
 }
-.contact p{
-    font-family: 'Protest Revolution', sans-serif;
-    color: #a3805e;
-    font-size: 45px;
-    font-weight: 200;
-    justify-content: center;
-    align-items: center;
-     padding: 30px 20px; 
-}
+
+
 .menu{
-    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
+.middle{
+    background: black;
+
+    margin: auto;
+}
+
+.middle img {
+    display: none;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+
+}
 .sidepart{
+    /* display: none; */
     width: 25%;
+    position: relative;
+    height: 200px;
+   background: black;
     
 }
