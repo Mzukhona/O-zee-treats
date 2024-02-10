@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+nav{ 
+    background: #101213;
+    justify-content: center;
+    color: rgb(86, 134, 134);
+    overflow: hidden;
+    position: static;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    padding: 30px 0px ;
+}
+.manu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.contact p{
+    font-family: 'Protest Revolution', sans-serif;
+    color: #a3805e;
+    font-size: 45px;
+    font-weight: 200;
+    justify-content: center;
+    align-items: center;
+     padding: 30px 20px; 
+}
+.menu{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.sidepart{
+    width: 25%;
+    
+}
